@@ -7,7 +7,7 @@ export default function Page() {
 
   return (
     <div className="min-h-screen w-full bg-slate-950 text-slate-100 font-sans antialiased p-4 md:p-8 lg:p-12 relative flex flex-col justify-between selection:bg-sky-500 selection:text-white">
-      {/* VISUAL THEME ONLY: Premium technical blueprint grid background pattern */}
+      {/* Premium technical blueprint grid background pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-30"></div>
 
       <div className="relative max-w-5xl w-full mx-auto flex flex-col flex-1 z-10">
@@ -51,7 +51,7 @@ export default function Page() {
                 <div className="space-y-4 max-w-3xl">
                   <h2 className="text-xl font-bold text-white">Professional Profile</h2>
                   <p className="text-slate-300 text-base md:text-lg leading-relaxed">
-                    Engineering professional currently pursuing an M.Sc. in Materials Science and Engineering at the Hamburg University of Technology (TUHH)[cite: 9, 21]. With a foundational background in Mechanical Engineering from NIT Rourkela and IIT Hyderabad[cite: 10, 25, 27], my expertise connects structural design, numerical finite element simulations, and digital manufacturing workflows to enhance mechanical lifecycle performance.
+                    Engineering professional currently pursuing an M.Sc. in Materials Science and Engineering at the Hamburg University of Technology (TUHH). With a foundational background in Mechanical Engineering from NIT Rourkela and IIT Hyderabad, my expertise connects structural design, numerical finite element simulations, and digital manufacturing workflows to enhance mechanical lifecycle performance.
                   </p>
                 </div>
                 
@@ -78,14 +78,14 @@ export default function Page() {
                     <span className="text-[10px] text-sky-400 font-bold uppercase tracking-wider block mb-1">Corporate Sector</span>
                     <h4 className="text-white font-bold text-sm mb-2">Airbus Operations GmbH</h4>
                     <p className="text-xs text-slate-400 leading-relaxed">
-                      Working student focusing on additive manufacturing implementations, components weight optimization, and tooling digitalization workflows[cite: 34, 35, 36].
+                      Working student focusing on additive manufacturing implementations, components weight optimization, and tooling digitalization workflows.
                     </p>
                   </div>
                   <div className="border border-slate-800 bg-slate-900/40 p-5 rounded-xl">
                     <span className="text-[10px] text-sky-400 font-bold uppercase tracking-wider block mb-1">Automotive Engineering</span>
                     <h4 className="text-white font-bold text-sm mb-2">e-gnition Hamburg e.V.</h4>
                     <p className="text-xs text-slate-400 leading-relaxed">
-                      Chassis department team member designing structural cockpit layouts, seating integration, and custom driver ergonomics[cite: 44, 50, 53].
+                      Chassis department team member designing structural cockpit layouts, seating integration, and custom driver ergonomics.
                     </p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function Page() {
             </div>
           )}
 
-          {/* SECTION 2: PROJECTS (EXPANDED DATA) */}
+          {/* SECTION 2: PROJECTS */}
           {activeTab === 'projects' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
@@ -108,11 +108,11 @@ export default function Page() {
                     <h3 className="text-base font-bold text-sky-400">Additive Manufacturing & Digitalization</h3>
                     <span className="text-[11px] font-medium text-slate-500">Airbus Operations GmbH | 2026 – Present</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Working Student (Ground Support Equipment & Tools) [cite: 34]</p>
+                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Working Student (Ground Support Equipment & Tools)</p>
                   <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4 leading-relaxed">
-                    <li>Contribute to New Product Development (NPD) vectors targeting structural ground handling support gear and advanced maintenance tools[cite: 34].</li>
-                    <li>Utilize polymer and metallic additive manufacturing architectures to achieve structural component lightweighting and high strength-to-weight optimization[cite: 35].</li>
-                    <li>Map and digitize tracking configurations across local legacy workflows to minimize communication delays and accelerate data efficiency lines[cite: 36, 37].</li>
+                    <li>Contribute to New Product Development (NPD) vectors targeting structural ground handling support gear and advanced maintenance tools.</li>
+                    <li>Utilize polymer and metallic additive manufacturing architectures to achieve structural component lightweighting and high strength-to-weight optimization.</li>
+                    <li>Map and digitize tracking configurations across local legacy workflows to minimize communication delays and accelerate data efficiency lines.</li>
                   </ul>
                 </div>
 
@@ -122,9 +122,9 @@ export default function Page() {
                     <h3 className="text-base font-bold text-white">Thermoplastic Preforming Test Platform</h3>
                     <span className="text-[11px] font-medium text-slate-500">Fraunhofer IFAM | 2025 – 2026</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Project Engineer (Fishing for Experience Framework) [cite: 39, 41]</p>
+                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Project Engineer (Fishing for Experience Framework)</p>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Spearheaded the design, configuration, and structural simulation parameters of an automated platform built to perform load validation testing on high-performance thermoplastic release films[cite: 41, 42]. This framework enables composite component manufacturers to accurately evaluate geometric deformation limits and material thresholds prior to final molding production.
+                    Spearheaded the design, configuration, and structural simulation parameters of an automated platform built to perform load validation testing on high-performance thermoplastic release films. This framework enables composite component manufacturers to accurately evaluate geometric deformation limits and material thresholds prior to final molding production.
                   </p>
                 </div>
 
@@ -134,11 +134,11 @@ export default function Page() {
                     <h3 className="text-base font-bold text-white">Capital Expansion Project Planning</h3>
                     <span className="text-[11px] font-medium text-slate-500">AM/NS India | 2024 – 2025</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Graduate Engineering Trainee (Iron Ore Beneficiation Plant) [cite: 54, 55]</p>
+                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Graduate Engineering Trainee (Iron Ore Beneficiation Plant)</p>
                   <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4 leading-relaxed">
-                    <li>Managed structural scheduling and cross-functional planning to successfully scale industrial plant operating output benchmarks from 8 MMTPA to 12 MMTPA[cite: 56].</li>
-                    <li>Acted as primary system coordinator for the execution, logistics, and resource pipeline of the multi-million dollar Tails Processing and Filtration Plant installation[cite: 57].</li>
-                    <li>Supervised equipment scheduling, critical path tracking, and inventory data integration by leveraging advanced SAP Materials Management modules[cite: 58].</li>
+                    <li>Managed structural scheduling and cross-functional planning to successfully scale industrial plant operating output benchmarks from 8 MMTPA to 12 MMTPA.</li>
+                    <li>Acted as primary system coordinator for the execution, logistics, and resource pipeline of the multi-million dollar Tails Processing and Filtration Plant installation.</li>
+                    <li>Supervised equipment scheduling, critical path tracking, and inventory data integration by leveraging advanced SAP Materials Management modules.</li>
                   </ul>
                 </div>
 
@@ -149,7 +149,7 @@ export default function Page() {
                     <span className="text-[11px] font-medium text-slate-500">Bachelor Thesis | NIT Rourkela</span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Investigated the microstructural evolution of Stellite 6 reinforced with 20% Titanium Boride (TiB) ceramic particles during advanced laser cladding operations[cite: 68, 70]. Modeled how changes in laser output energy and scanning speed vectors shift local thermal pooling histories, successfully enhancing total abrasive wear resistance and coating life parameters in extreme operational conditions[cite: 69, 70, 71].
+                    Investigated the microstructural evolution of Stellite 6 reinforced with 20% Titanium Boride (TiB) ceramic particles during advanced laser cladding operations. Modeled how changes in laser output energy and scanning speed vectors shift local thermal pooling histories, successfully enhancing total abrasive wear resistance and coating life parameters in extreme operational conditions.
                   </p>
                 </div>
 
@@ -160,7 +160,7 @@ export default function Page() {
                     <span className="text-[11px] font-medium text-slate-500">IIT Gandhinagar | Research Internship</span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Utilized high-fidelity finite element modeling (FEM) code blocks to simulate layer-by-layer metal deposition mechanics[cite: 60, 72]. Isolated how varying operational process fields alter cooling vectors, yielding critical insights used to minimize microstructural residual stress formation and enhance material fatigue life[cite: 60, 61, 62].
+                    Utilized high-fidelity finite element modeling (FEM) code blocks to simulate layer-by-layer metal deposition mechanics. Isolated how varying operational process fields alter cooling vectors, yielding critical insights used to minimize microstructural residual stress formation and enhance material fatigue life.
                   </p>
                 </div>
 
@@ -171,14 +171,14 @@ export default function Page() {
                     <span className="text-[11px] font-medium text-slate-500">IIT Guwahati | Research Project</span>
                   </div>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Designed and structurally engineered a robust, pressure-resistant framework for an underwater robotic vehicle built for deep-water excavations[cite: 75]. Formulated exact thruster placement matrices and spatial alignment maps to preserve flawless hydrodynamic stability and full movement control under severe underwater loads[cite: 75].
+                    Designed and structurally engineered a robust, pressure-resistant framework for an underwater robotic vehicle built for deep-water excavations. Formulated exact thruster placement matrices and spatial alignment maps to preserve flawless hydrodynamic stability and full movement control under severe underwater loads.
                   </p>
                 </div>
               </div>
             </div>
           )}
 
-          {/* SECTION 3: DEDICATED FORMULA STUDENT DIVISION */}
+          {/* SECTION 3: FORMULA STUDENT */}
           {activeTab === 'formula' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
@@ -188,14 +188,14 @@ export default function Page() {
 
               <div className="space-y-6">
                 {/* E-GNITION */}
-                <div className="border border-slate-800 bg-slate-900/20 p-5 rounded-xl relative">
+                <div className="border border-slate-800 bg-slate-900/20 p-5 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
                     <h3 className="text-base font-bold text-sky-400">e-gnition Hamburg e.V. (TUHH)</h3>
                     <span className="text-[11px] font-medium text-slate-500">09/2025 – Present</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-2 font-semibold">Core Department: Chassis & Cockpit Design [cite: 44, 50]</p>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Core Department: Chassis & Cockpit Design</p>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Active team member engaged in the engineering design cycle of the next-generation egn-26 fully electric formula race car[cite: 50, 51, 52]. Responsibilities center on cockpit interior layout generation, balancing driver safety rules, optimizing driver cell ergonomics, and engineering custom high-strength composite seat geometry configurations[cite: 53].
+                    Active team member engaged in the engineering design cycle of the next-generation egn-26 fully electric formula race car. Responsibilities center on cockpit interior layout generation, balancing driver safety rules, optimizing driver cell ergonomics, and engineering custom high-strength composite seat geometry configurations.
                   </p>
                 </div>
 
@@ -205,19 +205,19 @@ export default function Page() {
                     <h3 className="text-base font-bold text-white">Team Road Runner Electric (NIT Rourkela)</h3>
                     <span className="text-[11px] font-medium text-slate-500">08/2021 – 05/2024</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-2 font-semibold">Leadership Position: Chassis and Manufacturing Lead [cite: 12, 63]</p>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Leadership Position: Chassis and Manufacturing Lead</p>
                   <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4 leading-relaxed">
-                    <li>Led a multi-disciplinary automotive engineering division to design, simulate, and physically manufacture a lightweight Formula Student electric race vehicle[cite: 63, 64].</li>
-                    <li>Executed detailed 3D surface and structural modeling using CATIA V5 and SolidWorks platforms to maximize structural integrity[cite: 63].</li>
-                    <li>Conducted extensive Finite Element Analysis (FEA) to simulate rigorous crash impacts and calculate torsional stiffness requirements to achieve mass optimization[cite: 64].</li>
-                    <li>Supervised material characterization matrices and final physical assembly tolerances to ensure exact compliance with international Technical Management Inspection (TMI) rulebooks[cite: 63, 64].</li>
+                    <li>Led a multi-disciplinary automotive engineering division to design, simulate, and physically manufacture a lightweight Formula Student electric race vehicle.</li>
+                    <li>Executed detailed 3D surface and structural modeling using CATIA V5 and SolidWorks platforms to maximize structural integrity.</li>
+                    <li>Conducted extensive Finite Element Analysis (FEA) to simulate rigorous crash impacts and calculate torsional stiffness requirements to achieve mass optimization.</li>
+                    <li>Supervised material characterization matrices and final physical assembly tolerances to ensure exact compliance with international Technical Management Inspection (TMI) rulebooks.</li>
                   </ul>
                 </div>
               </div>
             </div>
           )}
 
-          {/* SECTION 4: SKILLS & COMPETENCIES */}
+          {/* SECTION 4: SKILLS */}
           {activeTab === 'skills' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
@@ -229,30 +229,30 @@ export default function Page() {
                 <div className="bg-slate-950/60 p-5 rounded-xl border border-slate-800">
                   <h3 className="text-sm font-bold text-sky-400 mb-3 uppercase tracking-wider">Computer-Aided Design (CAD)</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    SolidWorks, CATIA V5, Autodesk Inventor, AutoCAD, Autodesk Fusion360[cite: 76]. Experienced in advanced surface features, parametric assembly building, and manufacturing blueprint preparation.
+                    SolidWorks, CATIA V5, Autodesk Inventor, AutoCAD, Autodesk Fusion360. Experienced in advanced surface features, parametric assembly building, and manufacturing blueprint preparation.
                   </p>
                 </div>
 
                 <div className="bg-slate-950/60 p-5 rounded-xl border border-slate-800">
                   <h3 className="text-sm font-bold text-sky-400 mb-3 uppercase tracking-wider">Finite Element Analysis (FEA)</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    ANSYS Mechanical, ANSYS Explicit Dynamics, ANSYS Workbench, ANSYS Fluent[cite: 76]. Proficient in mesh independence tracking, structural static parsing, crash metrics, and fluid flow dynamics.
+                    ANSYS Mechanical, ANSYS Explicit Dynamics, ANSYS Workbench, ANSYS Fluent. Proficient in mesh independence tracking, structural static parsing, crash metrics, and fluid flow dynamics.
                   </p>
                 </div>
 
                 <div className="bg-slate-950/60 p-5 rounded-xl border border-slate-800">
                   <h3 className="text-sm font-bold text-sky-400 mb-3 uppercase tracking-wider">Systems & Engineering Core</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Additive Manufacturing processes, structural material characterization, SAP systems (Materials Management Module), MATLAB, and Simulink data operations[cite: 58, 76].
+                    Additive Manufacturing processes, structural material characterization, SAP systems (Materials Management Module), MATLAB, and Simulink data operations.
                   </p>
                 </div>
 
                 <div className="bg-slate-950/60 p-5 rounded-xl border border-slate-800">
                   <h3 className="text-sm font-bold text-sky-400 mb-3 uppercase tracking-wider">Languages</h3>
                   <div className="text-xs text-slate-300 space-y-1">
-                    <p><strong>English:</strong> Professional Working Proficiency (C1 / IELTS) [cite: 78]</p>
-                    <p><strong>German:</strong> Elementary Proficiency (A1 / Goethe Certificate) [cite: 78]</p>
-                    <p><strong>Telugu & Hindi:</strong> Native Languages [cite: 78]</p>
+                    <p><strong>English:</strong> Professional Working Proficiency (C1 / IELTS)</p>
+                    <p><strong>German:</strong> Elementary Proficiency (A1 / Goethe Certificate)</p>
+                    <p><strong>Telugu & Hindi:</strong> Native Languages</p>
                   </div>
                 </div>
               </div>
@@ -271,17 +271,17 @@ export default function Page() {
                 <div className="space-y-3 flex flex-col justify-between">
                   <div className="p-4 bg-slate-950/40 border border-slate-800 rounded-xl">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Email Address</span>
-                    <a href="mailto:kusumanchihaswanth@gmail.com" className="text-sky-400 hover:underline text-sm font-medium mt-1 inline-block">kusumanchihaswanth@gmail.com [cite: 2]</a>
+                    <a href="mailto:kusumanchihaswanth@gmail.com" className="text-sky-400 hover:underline text-sm font-medium mt-1 inline-block">kusumanchihaswanth@gmail.com</a>
                   </div>
                   
                   <div className="p-4 bg-slate-950/40 border border-slate-800 rounded-xl">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">LinkedIn Network</span>
-                    <a href="https://linkedin.com/in/haswanth-kusumanchi" target="_blank" rel="noreferrer" className="text-white hover:text-sky-400 font-medium text-sm mt-1 inline-block">linkedin.com/in/haswanth-kusumanchi [cite: 7]</a>
+                    <a href="https://linkedin.com/in/haswanth-kusumanchi" target="_blank" rel="noreferrer" className="text-white hover:text-sky-400 font-medium text-sm mt-1 inline-block">linkedin.com/in/haswanth-kusumanchi</a>
                   </div>
 
                   <div className="p-4 bg-slate-950/40 border border-slate-800 rounded-xl">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Location Headquarters</span>
-                    <span className="text-slate-300 text-sm font-medium mt-1 inline-block">Hamburg, Germany [cite: 3]</span>
+                    <span className="text-slate-300 text-sm font-medium mt-1 inline-block">Hamburg, Germany</span>
                   </div>
                 </div>
 
