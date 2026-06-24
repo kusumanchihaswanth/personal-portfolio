@@ -1,41 +1,98 @@
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Hi, I'm Haswanth Kusumanchi
-      </h1>
-      <p className="mb-4">
-        I bridge the gap between advanced materials science, mechanical engineering design, and digitalization to optimize the future of manufacturing. I am currently a Materials Science and Engineering Master's student at TU Hamburg, working as a student collaborator at Airbus within the Ground Support Equipment (GSE) and Tools division. My focus centers heavily on driving engineering efficiencies through Additive Manufacturing and Digitalization.
-      </p>
-      <p className="mb-4">
-        Beyond academic and corporate frameworks, I enjoy applying technical computing to structural simulations, tracking innovations in aviation planespotting, and following the mechanical and aerodynamic complexities of Formula 1 racing.
-      </p>
-
-      <hr className="my-6 border-neutral-200 dark:border-neutral-800" />
-
-      <h2 className="mb-4 text-xl font-semibold tracking-tighter">Technical Toolkit</h2>
-      <ul className="list-disc pl-5 space-y-2 mb-6">
-        <li><strong>Design & Engineering:</strong> CATIA V5, SolidWorks, Autodesk Inventor</li>
-        <li><strong>Analysis & Simulation:</strong> Finite Element Analysis (FEA), Materials Characterization</li>
-        <li><strong>Digitalization & Automation:</strong> Python (Engineering Simulations & Data Plotting)</li>
-        <li><strong>Core Competencies:</strong> Additive Manufacturing, Rapid Prototyping, Technical Documentation</li>
-      </ul>
-
-      <h2 className="mb-4 text-xl font-semibold tracking-tighter">Key Projects</h2>
-      <div className="space-y-4">
-        <div>
-          <h3 className="font-medium">Aerospace Digitalization & Tooling — Airbus</h3>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">Contributing to additive manufacturing workflows and digital tracking pipelines for ground support equipment.</p>
+    <section className="font-mono text-neutral-200 bg-neutral-950 p-2 antialiased selection:bg-emerald-500 selection:text-black">
+      {/* Terminal Style Header Banner */}
+      <div className="mb-6 flex items-center justify-between border border-neutral-800 bg-neutral-900/50 px-4 py-2 rounded-md">
+        <div className="flex space-x-2">
+          <div className="h-3 w-3 rounded-full bg-red-500/80"></div>
+          <div className="h-3 w-3 rounded-full bg-yellow-500/80"></div>
+          <div className="h-3 w-3 rounded-full bg-emerald-500/80"></div>
         </div>
-        <div>
-          <h3 className="font-medium">Thermoplastic Test Platform Development</h3>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">Collaborated on a dedicated university engineering initiative to design and validate a structural testing platform for thermoplastic release films.</p>
+        <span className="text-xs text-neutral-500 tracking-widest uppercase font-semibold">System: Operational</span>
+      </div>
+
+      {/* Main Core Hook */}
+      <header className="mb-10">
+        <h1 className="text-3xl font-bold tracking-tight text-white mb-2">
+          haswanth_kusumanchi<span className="text-emerald-400 animate-pulse">_</span>
+        </h1>
+        <p className="text-neutral-400 text-sm leading-relaxed max-w-2xl">
+          &gt; Materials Science Master's student @ TU Hamburg. Specialize in driving physical engineering efficiencies via Additive Manufacturing, structural optimization, and Digitalization pipelines. Currently collaborating within GSE & Tools at Airbus.
+        </p>
+      </header>
+
+      {/* Grid Display for Core Engineering Focus Blocks */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+        <div className="border border-neutral-800 bg-neutral-900/30 p-4 rounded-lg hover:border-emerald-500/40 transition-colors">
+          <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400 block mb-1">// CORE VECTOR</span>
+          <h2 className="text-base font-bold text-white mb-2">Advanced Materials & CAD</h2>
+          <p className="text-xs text-neutral-400 leading-normal">
+            Executing mechanical parts modeling and multi-material component synthesis using CATIA V5, SolidWorks, and Autodesk Inventor.
+          </p>
         </div>
-        <div>
-          <h3 className="font-medium">Formula Bharat Electric Racing Team</h3>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">Engineered structural components, managed technical design specifications, and executed comprehensive Technical Management Inspection (TMI) compliance.</p>
+        <div className="border border-neutral-800 bg-neutral-900/30 p-4 rounded-lg hover:border-emerald-500/40 transition-colors">
+          <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400 block mb-1">// INTERFACE LOGIC</span>
+          <h2 className="text-base font-bold text-white mb-2">Digitalization & Python</h2>
+          <p className="text-xs text-neutral-400 leading-normal">
+            Building technical processing models, automated telemetry evaluation algorithms, and processing structural simulation charts with Python.
+          </p>
         </div>
       </div>
+
+      {/* Engineering Skills Module */}
+      <div className="mb-10 border-l-2 border-neutral-800 pl-4">
+        <h2 className="text-lg font-bold text-white mb-4 flex items-center">
+          <span className="text-emerald-400 mr-2">01.</span> Technical Toolkit
+        </h2>
+        <div className="space-y-3 text-sm">
+          <div><span className="text-neutral-500">[Design]</span> <span className="text-neutral-300">CATIA V5 // SolidWorks // Autodesk Inventor // FEA</span></div>
+          <div><span className="text-neutral-500">[Coding]</span> <span className="text-neutral-300">Python // Engineering Data Simulation Plotting</span></div>
+          <div><span className="text-neutral-500">[Domain]</span> <span className="text-neutral-300">Additive Manufacturing // Rapid Prototyping // TMI Document Compliance</span></div>
+        </div>
+      </div>
+
+      {/* Chronological Technical Project Track */}
+      <div className="mb-8">
+        <h2 className="text-lg font-bold text-white mb-6 flex items-center">
+          <span className="text-emerald-400 mr-2">02.</span> Project Registries
+        </h2>
+        <div className="space-y-6">
+          <div className="relative border border-neutral-800 bg-neutral-900/10 p-4 rounded-lg">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h3 className="font-bold text-emerald-400 text-sm">Airbus Collaboration Pipeline</h3>
+              <span className="text-xs text-neutral-500 font-mono">Present</span>
+            </div>
+            <p className="text-xs text-neutral-400 leading-relaxed">
+              Contributing core design tracking methodologies for Ground Support Equipment and automated functional loops within tooling digitalization environments.
+            </p>
+          </div>
+
+          <div className="relative border border-neutral-800 bg-neutral-900/10 p-4 rounded-lg">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h3 className="font-bold text-white text-sm">Thermoplastic Release Platform</h3>
+              <span className="text-xs text-neutral-500 font-mono">2026</span>
+            </div>
+            <p className="text-xs text-neutral-400 leading-relaxed">
+              Collaboratively developed an industrial verification structural testing framework designated to benchmark physical threshold capabilities for high-performance thermoplastic releases.
+            </p>
+          </div>
+
+          <div className="relative border border-neutral-800 bg-neutral-900/10 p-4 rounded-lg">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+              <h3 className="font-bold text-white text-sm">Formula Bharat Electric Chassis</h3>
+              <span className="text-xs text-neutral-500 font-mono">Structural Compliance</span>
+            </div>
+            <p className="text-xs text-neutral-400 leading-relaxed">
+              Engineered primary functional components, drafted validation datasets, and cleared cross-disciplinary Technical Management Inspection safety gates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Minimalist Tech Footer */}
+      <footer className="pt-8 border-t border-neutral-900 text-center text-[10px] text-neutral-600 tracking-wider">
+        // SYSTEM DEPLOYED VIA VERCEL HYPERSTRUCTURE -- ALL LOGS SECURE
+      </footer>
     </section>
   )
 }
