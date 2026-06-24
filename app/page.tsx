@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 
 export default function Page() {
-  const [activeTab, setActiveTab] = useState<'home' | 'projects' | 'formula' | 'skills' | 'contact'>('home')
+  const [activeTab, setActiveTab] = useState<'home' | 'experience' | 'projects' | 'formula' | 'skills' | 'contact'>('home')
 
   return (
     <div className="min-h-screen w-full bg-slate-950 text-slate-100 font-sans antialiased p-4 md:p-8 lg:p-12 relative flex flex-col justify-between selection:bg-sky-500 selection:text-white">
@@ -23,9 +23,9 @@ export default function Page() {
             </p>
           </div>
           
-          {/* PROFESSIONAL NAVIGATION */}
+          {/* PROFESSIONAL NAVIGATION WITH 6 DISTINCT TABS */}
           <nav className="flex flex-wrap p-1 bg-slate-950/60 rounded-lg border border-slate-800 text-xs">
-            {(['home', 'projects', 'formula', 'skills', 'contact'] as const).map((tab) => (
+            {(['home', 'experience', 'projects', 'formula', 'skills', 'contact'] as const).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
@@ -93,92 +93,109 @@ export default function Page() {
             </div>
           )}
 
-          {/* SECTION 2: PROJECTS */}
-          {activeTab === 'projects' && (
+          {/* SECTION 2: EXPERIENCE (CORPORATE & INDUSTRIAL ENGAGEMENTS) */}
+          {activeTab === 'experience' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
-                <h2 className="text-xl font-bold text-white">Engineering Project Portfolio</h2>
-                <p className="text-xs text-slate-500 mt-0.5">Comprehensive documentation of industrial, research, and institutional projects.</p>
+                <h2 className="text-xl font-bold text-white">Professional Experience</h2>
+                <p className="text-xs text-slate-500 mt-0.5">Corporate roles, engineering internships, and industrial training tenures.</p>
               </div>
 
               <div className="space-y-4">
                 {/* AIRBUS */}
                 <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-sky-400">Additive Manufacturing & Digitalization</h3>
-                    <span className="text-[11px] font-medium text-slate-500">Airbus Operations GmbH | 2026 – Present</span>
+                    <h3 className="text-base font-bold text-sky-400">Airbus Operations GmbH</h3>
+                    <span className="text-[11px] font-medium text-slate-500">05/2026 – Present | Hamburg, Germany</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Working Student (Ground Support Equipment & Tools)</p>
+                  <p className="text-xs text-slate-300 mb-3 font-semibold">Working Student — Additive Manufacturing & Digitalization</p>
                   <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4 leading-relaxed">
-                    <li>Contribute to New Product Development (NPD) vectors targeting structural ground handling support gear and advanced maintenance tools.</li>
-                    <li>Utilize polymer and metallic additive manufacturing architectures to achieve structural component lightweighting and high strength-to-weight optimization.</li>
-                    <li>Map and digitize tracking configurations across local legacy workflows to minimize communication delays and accelerate data efficiency lines.</li>
+                    <li>Support new product development (NPD) initiatives for advanced maintenance tools and Ground Support Equipment (GSE).</li>
+                    <li>Apply additive manufacturing methodologies to design, iterate, and optimize components for weight reduction and functionality.</li>
+                    <li>Assist in driving the digitalization of tooling workflows to streamline engineering data and improve operational efficiency.</li>
+                    <li>Collaborate with cross-functional teams to integrate modern manufacturing techniques into legacy aerospace tooling processes.</li>
                   </ul>
-                </div>
-
-                {/* FRAUNHOFER */}
-                <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-white">Thermoplastic Preforming Test Platform</h3>
-                    <span className="text-[11px] font-medium text-slate-500">Fraunhofer IFAM | 2025 – 2026</span>
-                  </div>
-                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Project Engineer (Fishing for Experience Framework)</p>
-                  <p className="text-xs text-slate-400 leading-relaxed">
-                    Spearheaded the design, configuration, and structural simulation parameters of an automated platform built to perform load validation testing on high-performance thermoplastic release films. This framework enables composite component manufacturers to accurately evaluate geometric deformation limits and material thresholds prior to final molding production.
-                  </p>
                 </div>
 
                 {/* AMNS */}
                 <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-white">Capital Expansion Project Planning</h3>
-                    <span className="text-[11px] font-medium text-slate-500">AM/NS India | 2024 – 2025</span>
+                    <h3 className="text-base font-bold text-white">ArcelorMittal Nippon Steel India</h3>
+                    <span className="text-[11px] font-medium text-slate-500">07/2024 – 08/2025 | Kirandul, India</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-3 font-semibold">Role: Graduate Engineering Trainee (Iron Ore Beneficiation Plant)</p>
+                  <p className="text-xs text-slate-300 mb-3 font-semibold">Graduate Engineering Trainee — Project Planning</p>
                   <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4 leading-relaxed">
-                    <li>Managed structural scheduling and cross-functional planning to successfully scale industrial plant operating output benchmarks from 8 MMTPA to 12 MMTPA.</li>
-                    <li>Acted as primary system coordinator for the execution, logistics, and resource pipeline of the multi-million dollar Tails Processing and Filtration Plant installation.</li>
-                    <li>Supervised equipment scheduling, critical path tracking, and inventory data integration by leveraging advanced SAP Materials Management modules.</li>
+                    <li>Planned and coordinated major capital expansion projects to boost the plant's capacity from 8 MMTPA to 12 MMTPA.</li>
+                    <li>Worked as the project planner for the Iron Ore Tails Processing and Filtration Plant project, ensuring timely resource allocation and scheduling.</li>
+                    <li>Managed project workflows and documentation using proficiency in SAP (MM module) for accurate tracking and control.</li>
+                    <li>Developed comprehensive reports, schedules, and presentations using Microsoft Project to streamline communication and monitor progress.</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* SECTION 3: PROJECTS (RESEARCH & COLLABORATIVE DEVELOPMENTS) */}
+          {activeTab === 'projects' && (
+            <div className="space-y-6">
+              <div className="border-b border-slate-800 pb-3">
+                <h2 className="text-xl font-bold text-white">Engineering Projects</h2>
+                <p className="text-xs text-slate-500 mt-0.5">Academic research frameworks, thesis work, and institutional project collaborations.</p>
+              </div>
+
+              <div className="space-y-4">
+                {/* FRAUNHOFER */}
+                <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 className="text-base font-bold text-sky-400">Thermoplastic Release-Film Preforming Test Platform</h3>
+                    <span className="text-[11px] font-medium text-slate-500">11/2025 – 03/2026 | Fraunhofer IFAM</span>
+                  </div>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Project Work (Fishing for Experience Program at TUHH)</p>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    Spearheaded the functional engineering design and structural layout simulation of a specialized thermoplastic preforming testing assembly built for carbon composite manufacturing fields. This validation array isolated geometric material behaviors under tension to optimize production molding properties.
+                  </p>
                 </div>
 
                 {/* BACHELOR THESIS */}
                 <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-white">Laser Cladding Molten Pool Thermal History Analysis</h3>
-                    <span className="text-[11px] font-medium text-slate-500">Bachelor Thesis | NIT Rourkela</span>
+                    <h3 className="text-base font-bold text-white">Laser Cladding Optimization (Bachelor Thesis)</h3>
+                    <span className="text-[11px] font-medium text-slate-500">NIT Rourkela</span>
                   </div>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Title: Effect of molten pool thermal history on laser cladding of Stellite 6 + TiB</p>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Investigated the microstructural evolution of Stellite 6 reinforced with 20% Titanium Boride (TiB) ceramic particles during advanced laser cladding operations. Modeled how changes in laser output energy and scanning speed vectors shift local thermal pooling histories, successfully enhancing total abrasive wear resistance and coating life parameters in extreme operational conditions.
+                    Investigated the microstructural configuration changes of Stellite 6 integrated with a 20% Titanium Boride (TiB) ceramic particle compound under intense cladding sweeps. Evaluated power fields and scan rates to map heat dissipation dynamics, successfully augmenting material wear and erosion resistance metrics.
                   </p>
                 </div>
 
                 {/* IIT GANDHINAGAR */}
                 <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-white">Finite Element Modeling of Additive Manufacturing Residual Stresses</h3>
-                    <span className="text-[11px] font-medium text-slate-500">IIT Gandhinagar | Research Internship</span>
+                    <h3 className="text-base font-bold text-white">Residual Stress Modeling via Finite Element Methods</h3>
+                    <span className="text-[11px] font-medium text-slate-500">IIT Gandhinagar</span>
                   </div>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Summer Research Internship</p>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Utilized high-fidelity finite element modeling (FEM) code blocks to simulate layer-by-layer metal deposition mechanics. Isolated how varying operational process fields alter cooling vectors, yielding critical insights used to minimize microstructural residual stress formation and enhance material fatigue life.
+                    Deployed finite element modeling (FEM) arrays to characterize thermal behaviors and build-up parameters in metal powder bed configurations during layered additive manufacturing cycles. Isolated vector changes to minimize structural residual distortions and extend product fatigue thresholds.
                   </p>
                 </div>
 
                 {/* UNDERWATER ROBOTICS */}
                 <div className="p-5 border border-slate-800 bg-slate-900/20 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-white">Remote Sensing & Structural Synthesis in Deep-Water Robotics</h3>
-                    <span className="text-[11px] font-medium text-slate-500">IIT Guwahati | Research Project</span>
+                    <h3 className="text-base font-bold text-white">Deep-Water Excavation Robot Frame Architecture</h3>
+                    <span className="text-[11px] font-medium text-slate-500">IIT Guwahati</span>
                   </div>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Research Collaboration Project</p>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Designed and structurally engineered a robust, pressure-resistant framework for an underwater robotic vehicle built for deep-water excavations. Formulated exact thruster placement matrices and spatial alignment maps to preserve flawless hydrodynamic stability and full movement control under severe underwater loads.
+                    Constructed a highly rigid, pressure-stable structural chassis framework targeted for subsea exploration robotic vehicles. Designed strategic thruster coordinate alignments to guarantee optimal stability and drag mitigation under complex fluid dynamics loads.
                   </p>
                 </div>
               </div>
             </div>
           )}
 
-          {/* SECTION 3: FORMULA STUDENT */}
+          {/* SECTION 4: FORMULA STUDENT */}
           {activeTab === 'formula' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
@@ -191,33 +208,32 @@ export default function Page() {
                 <div className="border border-slate-800 bg-slate-900/20 p-5 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
                     <h3 className="text-base font-bold text-sky-400">e-gnition Hamburg e.V. (TUHH)</h3>
-                    <span className="text-[11px] font-medium text-slate-500">09/2025 – Present</span>
+                    <span className="text-[11px] font-medium text-slate-500">09/2025 – Present | Hamburg, Germany</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-2 font-semibold">Core Department: Chassis & Cockpit Design</p>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Chassis Department Member</p>
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    Active team member engaged in the engineering design cycle of the next-generation egn-26 fully electric formula race car. Responsibilities center on cockpit interior layout generation, balancing driver safety rules, optimizing driver cell ergonomics, and engineering custom high-strength composite seat geometry configurations.
+                    Contributing to the structural design and engineering optimization of the next-generation egn-26 fully electric formula car line. Actively handling cockpit component envelopes, safety packaging rules, cell layout spaces, and lightweight custom seat ergonomics.
                   </p>
                 </div>
 
                 {/* TEAM ROAD RUNNER */}
                 <div className="border border-slate-800 bg-slate-900/20 p-5 rounded-xl">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h3 className="text-base font-bold text-white">Team Road Runner Electric (NIT Rourkela)</h3>
-                    <span className="text-[11px] font-medium text-slate-500">08/2021 – 05/2024</span>
+                    <h3 className="text-base font-bold text-white">Team Road Runner Electric (Formula SAE)</h3>
+                    <span className="text-[11px] font-medium text-slate-500">08/2021 – 05/2024 | NIT Rourkela</span>
                   </div>
-                  <p className="text-xs text-slate-300 mb-2 font-semibold">Leadership Position: Chassis and Manufacturing Lead</p>
+                  <p className="text-xs text-slate-300 mb-2 font-semibold">Chassis and Manufacturing Lead</p>
                   <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4 leading-relaxed">
-                    <li>Led a multi-disciplinary automotive engineering division to design, simulate, and physically manufacture a lightweight Formula Student electric race vehicle.</li>
-                    <li>Executed detailed 3D surface and structural modeling using CATIA V5 and SolidWorks platforms to maximize structural integrity.</li>
-                    <li>Conducted extensive Finite Element Analysis (FEA) to simulate rigorous crash impacts and calculate torsional stiffness requirements to achieve mass optimization.</li>
-                    <li>Supervised material characterization matrices and final physical assembly tolerances to ensure exact compliance with international Technical Management Inspection (TMI) rulebooks.</li>
+                    <li>Led the structural deployment of an electric racing chassis, running complete material validations and 3D surfacing files in CATIA V5 and SolidWorks.</li>
+                    <li>Conducted detailed Finite Element Analysis (FEA) safety loops mapping structural torsional stiffness configurations and crash impact parameters.</li>
+                    <li>Supervised complete machine assembly loops to ensure physical fabrications matched digital parameters while satisfying Formula Student inspection profiles.</li>
                   </ul>
                 </div>
               </div>
             </div>
           )}
 
-          {/* SECTION 4: SKILLS */}
+          {/* SECTION 5: SKILLS */}
           {activeTab === 'skills' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
@@ -259,7 +275,7 @@ export default function Page() {
             </div>
           )}
 
-          {/* SECTION 5: CONTACT */}
+          {/* SECTION 6: CONTACT */}
           {activeTab === 'contact' && (
             <div className="space-y-6">
               <div className="border-b border-slate-800 pb-3">
