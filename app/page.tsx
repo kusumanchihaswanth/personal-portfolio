@@ -6,11 +6,12 @@ export default function Page() {
   const [activeTab, setActiveTab] = useState<'blueprint' | 'specifications' | 'materials' | 'contact'>('blueprint')
 
   return (
-    <div className="fixed inset-0 z-50 w-screen h-screen bg-neutral-900 text-neutral-100 font-sans overflow-y-auto antialiased p-4 md:p-8 lg:p-12 selection:bg-sky-500 selection:text-white">
+    // FIX: Swapped fixed h-screen with absolute container padding rules to stop project grid component clipping
+    <div className="min-h-screen w-full bg-neutral-900 text-neutral-100 font-sans antialiased p-4 md:p-8 lg:p-12 selection:bg-sky-500 selection:text-white relative flex flex-col justify-between">
       {/* BACKGROUND GRAPH GRID SUITE - Engineering Drafting Simulator */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-40"></div>
 
-      <div className="relative max-w-5xl mx-auto h-full flex flex-col z-10">
+      <div className="relative max-w-5xl w-full mx-auto flex flex-col flex-1 z-10">
         
         {/* TOP SPECIFICATION HEADER & MULTI-TAB CONTROLLER */}
         <div className="mb-8 flex flex-col md:flex-row items-stretch md:items-center justify-between border border-slate-800 bg-slate-950/80 backdrop-blur px-5 py-4 rounded-xl gap-4 shadow-xl">
@@ -45,7 +46,7 @@ export default function Page() {
         </div>
 
         {/* CORE SPECIFICATION RENDER BOX */}
-        <main className="flex-1 bg-slate-950/40 border border-slate-800/60 backdrop-blur rounded-2xl p-6 md:p-8 mb-8 min-h-[460px] shadow-inner">
+        <main className="flex-1 bg-slate-950/40 border border-slate-800/60 backdrop-blur rounded-2xl p-6 md:p-8 mb-8 shadow-inner">
           
           {/* TAB 01: BLUEPRINT COMPONENT (HOME) */}
           {activeTab === 'blueprint' && (
@@ -109,11 +110,9 @@ export default function Page() {
           {/* TAB 02: EXPERIENCE SPECIFICATIONS */}
           {activeTab === 'specifications' && (
             <div className="space-y-6">
-              <div className="border-b border-slate-800 pb-3 flex justify-between items-center">
-                <div>
-                  <h2 className="text-lg font-bold text-white font-mono">Professional Timeline</h2>
-                  <p className="text-xs text-slate-500 font-mono mt-0.5">Corporate, industrial, and institutional project tracks.</p>
-                </div>
+              <div className="border-b border-slate-800 pb-3">
+                <h2 className="text-lg font-bold text-white font-mono">Professional Timeline</h2>
+                <p className="text-xs text-slate-500 font-mono mt-0.5">Corporate, industrial, and institutional project tracks.</p>
               </div>
 
               <div className="space-y-6">
@@ -126,7 +125,7 @@ export default function Page() {
                     </div>
                     <span className="text-[10px] text-slate-500 font-mono">05/2026 – Present</span>
                   </div>
-                  <ul className="list-grid text-xs text-slate-400 space-y-2 list-disc pl-4">
+                  <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4">
                     <li>Support new product development (NPD) initiatives for advanced maintenance tools and Ground Support Equipment (GSE).</li>
                     <li>Apply additive manufacturing methodologies to design, iterate, and optimize components for weight reduction and functionality.</li>
                     <li>Assist in driving the digitalization of tooling workflows to streamline engineering data and improve operational efficiency.</li>
@@ -156,7 +155,7 @@ export default function Page() {
                     </div>
                     <span className="text-[10px] text-slate-500 font-mono">07/2024 – 08/2025</span>
                   </div>
-                  <ul className="list-grid text-xs text-slate-400 space-y-2 list-disc pl-4">
+                  <ul className="text-xs text-slate-400 space-y-2 list-disc pl-4">
                     <li>Coordinated major capital industrial plant expansion architectures to scale operating output tolerances from 8 MMTPA to 12 MMTPA.</li>
                     <li>Served as Lead System Planner for the Iron Ore Tails Processing and Filtration Plant, tracking multi-million resource schedules.</li>
                     <li>Controlled project material routing and documentation workflows using integrated SAP system parameters (MM Module).</li>
@@ -265,10 +264,10 @@ export default function Page() {
 
         </main>
 
-        {/* METRIC SYSTEM FOOTER BAR */}
-        <footer className="mt-auto pt-6 border-t border-slate-900/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-slate-500 font-mono tracking-wider">
-          <div>DASHBOARD OVERRIDE V2.6 // INTEGRATION VERIFIED</div>
-          <div>© 2026 HASWANTH KUSUMANCHI. SECURE CLOUD STORAGE LOGS.</div>
+        {/* FIXED: METRIC SYSTEM FOOTER BAR - Stays locked strictly underneath elements without layout clipping */}
+        <footer className="w-full pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-slate-500 font-mono tracking-wider pb-4">
+          <div>DASHBOARD OVERRIDE V2.7 // INTEGRATION VERIFIED</div>
+          <div>© 2026 HASWANTH KUSUMANCHI. ALL SYSTEMS OPERATIONAL.</div>
         </footer>
       </div>
     </div>
